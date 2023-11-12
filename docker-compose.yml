@@ -1,0 +1,41 @@
+version: "3.8"
+
+services: 
+  micro1:
+    image: micro1:v1.0
+    container_name: obiwan
+    hostname: micro1
+    ports:
+      - "9999:9999"
+    expose:
+      - "9999"
+    networks:
+      - default
+    volumes:
+      - micro1:/ms1
+    
+
+
+  micro2:
+    image:  micro2:v1.0
+    container_name: anakin
+    hostname: micro2
+    ports:
+      - "9999:9999"
+    expose:
+      - "9999"
+    networks:
+      - default
+    volumes:
+      - micro2:/ms2
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.10.0.0/24
+
+
+volumes:
+  micro1: ~
+  micro2: ~

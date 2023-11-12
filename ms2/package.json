@@ -1,0 +1,14 @@
+{
+  "name": "risttorantecapricchioso",
+  "version": "1.0.0",
+  "description": "La elegancia de comer bongaos",
+  "main": "index.js",
+  "scripts": {
+    "app": "node index.js"
+  },
+  "author": "Santiago Gallego Henao",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
