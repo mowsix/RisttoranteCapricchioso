@@ -4,7 +4,9 @@
   "description": "La elegancia de comer bongaos",
   "main": "index.js",
   "scripts": {
-    "app": "node index.js"
+    "app": "node index.js",
+    "ms1": "comando_para_iniciar_ms2",
+    "start": "comando_para_iniciar_la_aplicacion"
   },
   "author": "Santiago Gallego Henao",
   "license": "ISC",

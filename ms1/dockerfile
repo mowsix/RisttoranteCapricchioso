@@ -1,6 +1,6 @@
 FROM node:20
-WORKDIR /home/node/ms1
-COPY ms1 /home/node/ms1
+WORKDIR /ms1
+COPY . .
 RUN npm install
 CMD npm run ms1
 EXPOSE 9999
